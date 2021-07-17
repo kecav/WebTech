@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="JQuery.js" defer></script>
+    <style>
+        article {
+            display: flex;
+            justify-content: center;
+            padding: 2rem 0;
+        }
+        
+        form {
+            width: 50%;
+            background-color: #f3f4ed;
+            min-width: 40rem;
+        }
+        
+        fieldset {
+            padding: 5% 20% 10%;
+        }
+        
+        fieldset legend {
+            padding: 5px;
+            color: #fff;
+            background-color: #c06014;
+            text-align: center;
+            width: 80%;
+        }
+        
+        fieldset textarea {
+            width: 100%;
+            height: 100px;
+        }
+        
+        .middle-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .agreement-box {
+            padding: 10px;
+            line-height: 20px;
+            color: #fff;
+            background-color: #424642;
+        }
+        
+        .bottom-container {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .table-footer {
+            padding: 10px;
+            background-color: #424642;
+            text-align: center;
+        }
+        
+        .table-footer button {
+            height: 20px;
+            color: #fff;
+            background-color: #c06014;
+            border: none;
+            border-radius: 5px;
+            padding: 0 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <form method="Get">
+            <fieldset>
+                <legend>Photo Detals</legend>
+                <p>
+                    <labeL>Title</labeL><br>
+                    <input type="text" id="title"><br>
+                    <label>Description</label><br>
+                    <textarea id="description"></textarea>
+                </p>
+                <div class="middle-container">
+                    <div class="left-container">
+                        <p>
+                            <label>Continent</label><br>
+                            <select name="continent">
+                                <option value="null">Choose a continent</option>
+                                <option value="africa">Africa</option>
+                                <option value="antarctica">Antarctica</option>
+                                <option value="asia">Asia</option>
+                                <option value="australia">Australia</option>
+                                <option value="europe">Europe</option>
+                                <option value="north-america">North-America</option>
+                                <option value="south-america">South-America</option>
+                            </select><br>
+                            <label>Country</label><br>
+                            <select name="country">
+                                <option>Choose a Country</option>
+                                <option value="country1">Country1</option>
+                                <option value="country2">Country2</option>
+                                <option value="country3">Country3</option>
+                                <option value="country4">Country4</option>
+                                <option value="country5">Country5</option>
+                                <option value="country6">Country6</option>
+                                <option value="country7">Country7</option>
+                            </select><br>
+                            <label>City</label><br>
+                            <input type="text">
+                        </p>
+                    </div>
+                    <div class="right-container">
+                        <div class="Copyright-box">
+                            <p>
+                                <label>Copyright ?</label><br>
+                                <input type="radio" value="1">All rights reserved</br>
+                                <input type="radio" value="2">Creative Commons</br>
+                            </p>
+                        </div>
+
+                        <div class="Creative-common-box">
+                            <p>
+                                <label>Creative Commons Types</label><br>
+                                <input type="checkbox" value="attribution">Attribution</br>
+                                <input type="checkbox" value="non-commerical">Non-Commerical</br>
+                                <input type="checkbox" value="no-derivative-works">No Derivative works</br>
+                                <input type="checkbox" value="share-alike">Share alike</br>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="agreement-box">
+                    <input type="checkbox" id="agreement">I accept the software license</br>
+                </div>
+
+                <div class="bottom-container">
+                    <div class="left-container">
+                        <p>
+                            <label>Rate this Photo</label><br>
+                            <input type="number" min="1" max="5"><br>
+                            <label>Color Collection</label><br>
+                            <input type="color">
+                        </p>
+                    </div>
+                    <div class="right-container">
+                        <p>
+                            <label>Date taken: </label><br>
+                            <input type="date"><br>
+                            <label>Time taken: </label><br>
+                            <input type="time"><br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="table-footer">
+                    <button type="submit" id="submit-btn">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </fieldset>
+        </form>
+    </article>
+
+</body>
+
+</html>
